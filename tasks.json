@@ -1,0 +1,6 @@
+[
+  {"task": "Learn Python variables", "done": true},
+  {"task": "Learn loops", "done": true},
+  {"task": "Learn file I/O", "done": false},
+  {"task": "Learn error handling", "done": false}
+]
