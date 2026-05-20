@@ -11,8 +11,11 @@ Building skills in Python and Agentic AI from scratch with a goal of landing a j
 - Error handling with try/except
 - Built a task filter mini project
 
-### Week 2 — Object Oriented Python 🔄
-- In progress
+### Week 2 — Object Oriented Python ✅
+- Classes and objects
+- self keyword and shared memory
+- Methods and attributes
+- Refactored Week 1 code into OOP structure
 
 ### Week 3 — Async Python ⏳
 ### Week 4 — REST APIs ⏳
@@ -25,6 +28,7 @@ Building skills in Python and Agentic AI from scratch with a goal of landing a j
 | Project | Week | Description | Status |
 |---------|------|-------------|--------|
 | Task Filter | Week 1 | Reads JSON, filters incomplete tasks, handles errors | ✅ Done |
+| TaskManager Class | Week 2 | Refactored Week 1 code into OOP structure | ✅ Done |
 
 ## Tech Stack
 - Python 3
