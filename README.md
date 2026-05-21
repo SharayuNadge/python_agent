@@ -17,7 +17,12 @@ Building skills in Python and Agentic AI from scratch with a goal of landing a j
 - Methods and attributes
 - Refactored Week 1 code into OOP structure
 
-### Week 3 — Async Python ⏳
+### Week 3 — Async Python ✅
+- async/await and event loop
+- asyncio.gather for concurrent tasks
+- Real API calls with aiohttp
+- Virtual environment setup
+
 ### Week 4 — REST APIs ⏳
 ### Week 5 — LLM APIs ⏳
 ### Week 6 — First Agent ⏳
