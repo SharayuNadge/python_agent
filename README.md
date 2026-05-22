@@ -20,10 +20,17 @@ Building skills in Python and Agentic AI from scratch with a goal of landing a j
 ### Week 3 — Async Python ✅
 - async/await and event loop
 - asyncio.gather for concurrent tasks
-- Real API calls with aiohttp
+- aiohttp for async HTTP requests
 - Virtual environment setup
+- Real API calls fetched simultaneously
 
-### Week 4 — REST APIs ⏳
+### Week 4 — REST APIs ✅
+- Secrets management with .env
+- API authentication with API keys
+- Error handling and graceful failures
+- Rate limiting with tenacity
+- Async API calls with aiohttp
+
 ### Week 5 — LLM APIs ⏳
 ### Week 6 — First Agent ⏳
 ### Week 7 — Memory & State ⏳
@@ -34,6 +41,8 @@ Building skills in Python and Agentic AI from scratch with a goal of landing a j
 |---------|------|-------------|--------|
 | Task Filter | Week 1 | Reads JSON, filters incomplete tasks, handles errors | ✅ Done |
 | TaskManager Class | Week 2 | Refactored Week 1 code into OOP structure | ✅ Done |
+| Async Speed Test | Week 3 | Compared blocking vs async execution, fetched joke and fact simultaneously | ✅ Done |
+| Morning Briefing | Week 4 | Fetches weather, joke and fact simultaneously using async | ✅ Done |
 
 ## Tech Stack
 - Python 3
