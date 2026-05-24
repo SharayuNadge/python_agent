@@ -31,7 +31,21 @@ Building skills in Python and Agentic AI from scratch with a goal of landing a j
 - Rate limiting with tenacity
 - Async API calls with aiohttp
 
-### Week 5 — LLM APIs ⏳
+## Week 5 - Calling LLM APIs
+
+### Day 1 - First LLM API Call
+- Installed Anthropic SDK, Gemini SDK, OpenAI SDK
+- Explored cloud API options (Gemini, OpenRouter) - faced regional restrictions
+- Set up LM Studio to run AI models locally on MacBook
+- Made first successful LLM API call using Gemma-4 model
+- Learned about roles: user, assistant, system
+- Understood difference between local AI and cloud APIs
+
+### Tools & Libraries
+- LM Studio (local AI server)
+- google-genai
+- openai (used to connect to LM Studio)
+
 ### Week 6 — First Agent ⏳
 ### Week 7 — Memory & State ⏳
 ### Week 8 — Ship & Deploy ⏳
@@ -43,6 +57,7 @@ Building skills in Python and Agentic AI from scratch with a goal of landing a j
 | TaskManager Class | Week 2 | Refactored Week 1 code into OOP structure | ✅ Done |
 | Async Speed Test | Week 3 | Compared blocking vs async execution, fetched joke and fact simultaneously | ✅ Done |
 | Morning Briefing | Week 4 | Fetches weather, joke and fact simultaneously using async | ✅ Done |
+| First LLM API Call | Week 5 | Connected to local AI using LM Studio, made first successful LLM API call | ✅ Done |
 
 ## Tech Stack
 - Python 3
