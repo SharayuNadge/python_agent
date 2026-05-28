@@ -41,6 +41,12 @@ Building skills in Python and Agentic AI from scratch with a goal of landing a j
 - Learned about roles: user, assistant, system
 - Understood difference between local AI and cloud APIs
 
+### Day 2 - System Prompts, Multi-turn Conversations and Streaming
+- Learned how system prompts control AI personality and behavior
+- Built multi-turn conversation with full history management
+- Implemented streaming responses word by word
+- Built Email Drafting Assistant combining all Week 5 concepts
+
 ### Tools & Libraries
 - LM Studio (local AI server)
 - google-genai
@@ -58,6 +64,7 @@ Building skills in Python and Agentic AI from scratch with a goal of landing a j
 | Async Speed Test | Week 3 | Compared blocking vs async execution, fetched joke and fact simultaneously | ✅ Done |
 | Morning Briefing | Week 4 | Fetches weather, joke and fact simultaneously using async | ✅ Done |
 | First LLM API Call | Week 5 | Connected to local AI using LM Studio, made first successful LLM API call | ✅ Done |
+| Email Drafting Assistant | Week 5 | AI powered email writer with system prompts, multi-turn conversation and streaming | ✅ Done |
 
 ## Tech Stack
 - Python 3
