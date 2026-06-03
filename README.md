@@ -52,6 +52,13 @@ Building skills in Python and Agentic AI from scratch with a goal of landing a j
 - google-genai
 - openai (used to connect to LM Studio)
 
+### Day 3 - Structured Outputs and Error Handling
+- Made AI return clean JSON instead of plain text
+- Learned json.loads() to convert AI string response to Python dictionary
+- Handled 3 failure scenarios - ConnectionError, JSONDecodeError, KeyError
+- Learned to wrap API calls inside try/except block
+- Built production ready error handling for AI applications
+
 ### Week 6 — First Agent ⏳
 ### Week 7 — Memory & State ⏳
 ### Week 8 — Ship & Deploy ⏳
