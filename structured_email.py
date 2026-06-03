@@ -13,7 +13,8 @@ Always respond with a JSON object only - no extra text, no markdown, no code blo
 The JSON must have exactly these three fields:
 - subject: the email subject line
 - body: the full email body
-- tone: either 'formal' or 'casual'
+- tone: the tone specified by the user - formal, casual or persuasive
+Always follow the tone specified by the user strictly.
 
 Example format:
 {
@@ -26,17 +27,28 @@ Example format:
 print("=== Structured Email Assistant ===\n")
 
 user_input = input("Describe the email you need: ")
-messages.append({"role": "user", "content": user_input})
+tone_choice = input("\nSelect tone:\n1. Formal\n2. Casual\n3. Persuasive\nEnter choice (1/2/3): ")
+
+tone_map = {
+    "1": "formal",
+    "2": "casual",
+    "3": "persuasive"
+}
+email_tone = tone_map.get(tone_choice, "formal")
+
+messages.append({"role": "user", "content": f"{user_input}. Use a {email_tone} tone."})
 
 # Parse the JSON response
 try:
     # Check if JSON has all expected fields
     response = client.chat.completions.create(
         model="google/gemma-4-e4b",
-        messages=messages
+        messages=messages,
+        max_tokens=1000
     )
 
     raw = response.choices[0].message.content
+    raw = raw.strip().removeprefix("```json").removesuffix("```").strip()
     email_data = json.loads(raw)
     
     if not all(key in email_data for key in ["subject", "body", "tone"]):
@@ -48,6 +60,13 @@ try:
     print(email_data["body"])
     print("\n--- TONE ---")
     print(email_data["tone"])
+
+    with open("email_output.txt", "w") as f:
+        f.write(f"Subject: {email_data['subject']}\n")
+        f.write(f"Body:\n {email_data['body']}\n")
+        f.write(f"Tone:\n {email_data['tone']}\n")
+    
+    print("\n✅ Email saved to email_output.txt")
 
 except APIConnectionError:
     print("Cannot connect to LM Studio. Please make sure the server is running!")
