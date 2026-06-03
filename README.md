@@ -59,6 +59,14 @@ Building skills in Python and Agentic AI from scratch with a goal of landing a j
 - Learned to wrap API calls inside try/except block
 - Built production ready error handling for AI applications
 
+### Day 4 - Polishing the Email Assistant
+- Added file saving - email output saved to email_output.txt
+- Added tone selection menu - formal, casual, persuasive
+- Learned to write to files using open() with "w" mode
+- Fixed markdown stripping from AI JSON responses
+- Added max_tokens to prevent incomplete AI responses
+- Learned tone_map dictionary for converting user input to tone words
+
 ### Week 6 — First Agent ⏳
 ### Week 7 — Memory & State ⏳
 ### Week 8 — Ship & Deploy ⏳
@@ -71,7 +79,7 @@ Building skills in Python and Agentic AI from scratch with a goal of landing a j
 | Async Speed Test | Week 3 | Compared blocking vs async execution, fetched joke and fact simultaneously | ✅ Done |
 | Morning Briefing | Week 4 | Fetches weather, joke and fact simultaneously using async | ✅ Done |
 | First LLM API Call | Week 5 | Connected to local AI using LM Studio, made first successful LLM API call | ✅ Done |
-| Email Drafting Assistant | Week 5 | AI powered email writer with system prompts, multi-turn conversation and streaming | ✅ Done |
+| Email Drafting Assistant | Week 5 | AI powered email writer with system prompts, multi-turn conversation, streaming, tone selection, JSON output and file saving | ✅ Done |
 
 ## Tech Stack
 - Python 3
