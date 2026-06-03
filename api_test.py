@@ -1,11 +1,16 @@
 import os
 import requests
 from dotenv import load_dotenv
+from tenacity import retry, wait_exponential, stop_after_attempt
 
 load_dotenv()
 
 api_key = os.getenv("API_KEY")
 
+@retry(
+    wait=wait_exponential(multiplier=1, min=2, max=10),
+    stop=stop_after_attempt(3)
+)
 def get_weather(city):
     try:
         url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
@@ -25,6 +30,4 @@ def get_weather(city):
     except requests.exceptions.Timeout:
         print("Error: Request timed out")
 
-for i in range(10):
-    print(f"Call {i+1}")
-    get_weather("Dubai")
+get_weather("Dubai")
